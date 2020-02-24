@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIT Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+<nav>
+<div class="container nav-wrapper">
+    <a href="/" class="brand-logo">NITD results</a>
+    <ul id="nav-mobile" class="right">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'search_by_rollno' %}">Search by Roll no.</a></li>
+    </ul>
+</div>
+</nav>
+</nav>
+
+
+    <div class="container">
+    <table class="striped">
+        <thead>
+          <tr>
+              <th>Roll Number</th>
+              <th>Name</th>
+              <th>SGPA</th>
+              <th>CGPA</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        {% for row in table_data %}
+          <tr>
+          {% for col in row %}
+              <td>{{ col }}</td>
+          {% endfor %}
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+</body>
+<footer class="page-footer">
+          <div class="container">
+
+          </div>
+        </footer>
+</html>

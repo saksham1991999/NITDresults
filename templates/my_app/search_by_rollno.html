@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIT Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+<nav>
+<div class="container nav-wrapper">
+    <a href="/" class="brand-logo">NITD results</a>
+    <ul id="nav-mobile" class="right">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'search_by_rollno' %}">Search by Roll no.</a></li>
+    </ul>
+</div>
+</nav>
+<div class="container">
+
+    <form action="{% url 'parse_search_rollno' %}" method="post">
+    {% csrf_token %}
+        <h2>Enter your Roll no.</h2>
+        <input type="text" name="rollno" placeholder="search">
+        <h3>Select semester</h3>
+
+    <p>
+      <label>
+        <input name="sem" type="radio" checked value="1" id="sem1"/>
+        <span>1</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="2" id="sem2"/>
+        <span>2</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="3" id="sem3"/>
+        <span>3</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="4" id="sem4"/>
+        <span>4</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="5" id="sem5"/>
+        <span>5</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="6" id="sem6"/>
+        <span>6</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="7" id="sem7"/>
+        <span>7</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input name="sem" type="radio" value="8" id="sem8"/>
+        <span>8</span>
+      </label>
+    </p>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        </button>
+    </form>
+<br>
+    <br>
+</div>
+</body>
+<footer class="page-footer">
+          <div class="container">
+
+          </div>
+        </footer>
+</html>
