@@ -19,10 +19,7 @@
 </div>
 </nav>
 <div class="container">
-    <div class="center">
-    <h2>It takes about 2 minutes to scrape data! ;_;</h2>
-        <h6>Use search by roll no. if you don't want to wait</h6>
-    </div>
+
     <form action="{% url 'search' %}" method="post">
     {% csrf_token %}
 
