@@ -1,18 +1,19 @@
 from django.shortcuts import render
 from selenium.webdriver.firefox.options import Options
-options = Options()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+#options = Options()
+#options.add_argument('--headless')
+#options.add_argument('--disable-gpu')
 from selenium import webdriver
 import lxml.html
 import time
 from .models import Student
-driver = webdriver.Firefox(executable_path=r'/home/rahul/Desktop/project/nitdresults/geckodriver', firefox_options=options)
+#driver = webdriver.Firefox(executable_path=r'/home/rahul/Desktop/project/nitdresults/geckodriver', firefox_options=options)
 
 # Create your views here.
 
 url = "https://erp.nitdelhi.ac.in/CampusLynxNITD/studentonindex.jsp"
 
+"""
 def get_data(roll_no):
     driver.get(url)
     iframe = driver.find_elements_by_tag_name('iframe')[0]
@@ -68,7 +69,7 @@ def get_data(roll_no):
 
     return data
 
-
+"""
 
 def home(request):
     return render(request, 'home.html')

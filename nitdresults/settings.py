@@ -25,7 +25,7 @@ SECRET_KEY = 'g2-3f7$w+x79+%=w_l2u2swf!ew!#30*su-hv)#a@zo47^71p)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nitdresults.herokuapp.com']
 
 
 # Application definition
@@ -126,5 +126,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-from selenium import webdriver
-SELENIUM_DRIVER = webdriver.Firefox(executable_path = os.path.join(BASE_DIR, 'geckodriver'))
+#from selenium import webdriver
+#SELENIUM_DRIVER = webdriver.Firefox(executable_path = os.path.join(BASE_DIR, 'geckodriver'))
