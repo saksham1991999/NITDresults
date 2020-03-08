@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f16596b2-9bfa-4281-9d64-480f2115505e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nitdresults/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nitdresults/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev_list" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +95,7 @@
       <workItem from="1581116294685" duration="32000" />
       <workItem from="1583556890230" duration="6785000" />
       <workItem from="1583594733828" duration="5539000" />
-      <workItem from="1583658315282" duration="3734000" />
+      <workItem from="1583658315282" duration="6075000" />
     </task>
     <servers />
   </component>
