@@ -13,14 +13,14 @@
 <div class="container nav-wrapper">
     <a href="/" class="brand-logo">NITD results</a>
     <ul id="nav-mobile" class="right">
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'search_by_rollno' %}">Search by Roll no.</a></li>
+        <li><a href="{% url 'my_app:home' %}">Home</a></li>
+        <li><a href="{% url 'my_app:search_by_rollno' %}">Search by Roll no.</a></li>
     </ul>
 </div>
 </nav>
 <div class="container">
 
-    <form action="{% url 'parse_search_rollno' %}" method="post">
+    <form action="{% url 'my_app:parse_search_rollno' %}" method="post">
     {% csrf_token %}
         <h2>Enter your Roll no.</h2>
         <input type="text" name="rollno" placeholder="search">
